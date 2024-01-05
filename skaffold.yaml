@@ -7,7 +7,10 @@ deploy:
 build:
   local:
     push: false
+  # googleCloudBuild:
+  #   projectId: ticket-app-409902
   artifacts:
+    # - image: us.gcr.io/ticket-app-409902/auth
     - image: ibtehazc/auth
       context: auth
       docker:
