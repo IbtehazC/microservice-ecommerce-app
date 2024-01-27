@@ -1,4 +1,4 @@
-import buildClient from '../api/build-client';
+import buildClient from '../api/buildClient';
 
 const LandingPage = ({ currentUser }) => {
   return currentUser ? (
