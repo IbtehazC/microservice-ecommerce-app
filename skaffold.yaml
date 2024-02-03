@@ -27,3 +27,11 @@ build:
         manual:
           - src: '**/*.js'
             dest: .
+    - image: ibtehazc/products
+      context: products
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.ts'
+            dest: .
